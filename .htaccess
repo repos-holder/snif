@@ -1,0 +1,9 @@
+RewriteEngine On 
+RewriteRule ^([A-Za-z0-9/]+)sort-([a-z]+)/?$ 							$1?sort=$2
+RewriteRule ^([A-Za-z0-9/]+)sort-([a-z]+)/order-([a-z]+)/?$ 			$1?sort=$2&order=$3
+RewriteRule ^([A-Za-z0-9/]+)sort-([a-z]+)/path/(.*)/+$ 					$1?sort=$2&path=$3/
+RewriteRule ^([A-Za-z0-9/]+)sort-([a-z]+)/order-([a-z]+)/path/(.*)/+$ 	$1?sort=$2&order=$3&path=$4/
+RewriteRule ^([A-Za-z0-9/]+)getimage-([a-z]+)$ 							$1?getimage=$2
+RewriteRule ^([A-Za-z0-9/]+)thumbnail-(.*)$ 							$1?thumbnail=$2
+RewriteRule ^([A-Za-z0-9]+)/path/(.*)/+$	 							$1/?path=$2/
+ 
