@@ -9,6 +9,6 @@ This fork has few important fixes. Here we go:
 - Algorithm that counted number of elements in directory was completely (!) broken. Now it's rewritten in try of more right solution and bugs in count sometimes only with empty dirs;
 - UTF8 charset used instead of nothing.
 
-##Package structure:
-##.htaccess
+## Package structure:
+## .htaccess
 Apache-ready URL rewrites that you must use with this script. Every internal URL was rewriten.
