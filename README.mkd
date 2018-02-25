@@ -1,14 +1,8 @@
-This fork has few important fixes. Here we go:
-
-- Every usual pathes were changed to Rewrite engine URLs. Apache-ready rewrites included. Now you can even easily hide that script was originaly written in PHP;
-- Code and comments cleanup. Pure and strict obfuscated and cleaned re-audited XHTML code, valid CSS code;
-- Fixed Russian translation, now it's more literately right. Language files support removed. Russian languange is one and only;
-- Removed footer copyrights. No copyrights in XHTML output left;
-- Removed download icon and link because modern browsers are possible of this capabilities. Pictures links removed, since file has already URL with it's name;
-- Sorting was fixed. Sorting arrows were fixed;
-- Algorithm that counted number of elements in directory was completely (!) broken. Now it's rewritten in try of more right solution and bugs in count sometimes only with empty dirs;
-- UTF8 charset used instead of nothing.
-
-## Package structure:
-## .htaccess
-Apache-ready URL rewrites that you must use with this script. Every internal URL was rewriten.
+Пофикшеный snif:
+- Используются правила rewrite. Конфигурация .htaccess для Apache прилагается
+- Почищены код и комментарии. XHTML и CSS пожаты и соответствуют стандартам
+- Оставлен только русский язык. Перевод исправлен. Используется кодировка UTF-8
+- Убраны копирайты в XHTML выводе
+- Убран бесполезный значок загрузки. Для этого придуманы mime типы, а для картинкок - функция сохранения в браузере
+- Исправлена сортировка
+- Улучшен алгоритм подсчета файлов
